@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shivam</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+<head>
+    <style>
+        
+        .header {
+            background-image: url("./studio.jpeg");
+            background-size:cover;
+            background-blend-mode: difference;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            text-align: center;
+            height: 100vh;
+        }
+        .header h1 {
+            font-size: 5rem;
+            animation: pulse 2s ease-in-out infinite;
+            text-align: center;
+            padding-top:14rem ;
+        }
+        .welcome {
+            font-size: 2.5rem;
+            animation: fadeInUp 3s ease-in-out;
+            padding-top:10rem ;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+    <div class="header">
+        <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1>I'm SHIVAM BARTHWAL</h1>
+        <p class="welcome">Welcome to My Universe of Creation</p>
+    </div>
+
+<section id="about">
+    <div class="container">
+        <h1 style="font-size: 3rem; color: white;">About Me</h1>
+        <div class="about-container">
+            <div class="about-text" style="width: fit-content; padding: 3rem;">
+                <p style="font-size: 2rem;">
+                    Hi, I'm Shivam Barthwal , a passionate musician and web developer. I love creating beautiful websites and composing music that resonates with emotions. I'm currently pursuing my studies in Computer Science while honing my musical skills.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="logo.jpg" alt="Shivam Barthwal">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="project">
+    <div class="container">
+        <h1 style="font-size: 3rem; color: #ffffff;">Projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="23.jpg" alt="Temperature Converter">
+                </div>
+                <div class="project-info">
+                    <h2>Temperature Converter</h2>
+                    <p>The Temperature Converter project, a remarkable web application crafted using HTML, CSS, and Python Flask. This project beautifully combines web development and backend programming to create a user-friendly and efficient temperature conversion tool.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="22.jpg" alt="Landing Page">
+                </div>
+                <div class="project-info">
+                    <h2>Landing Page</h2>
+                    <p>As a web developer and designer, I've created an engaging and visually appealing landing page using HTML and CSS. This project serves as a striking entry point to captivate users and provide them with essential music playlists .</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="music">
+        <h1 style="font-size: 3rem;">Music</h1>
+        <div class="music-container">
+            
+            <div class="track">
+                <audio controls style="color:black ;">
+                    <source src="Lofi_hiphop_beat.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <h2>Music Track 1</h2>
+                <p>This is an instrumental masterpiece that effortlessly blends the serene charm of lo-fi with the electrifying vibes of nightcore. Its gentle piano and rhythmic beats set the mood for a tranquil urban night, while ambient sounds create a mesmerizing atmosphere. With shimmering synths and ethereal electronic elements, this track is a musical journey to unwind, study, or dream beneath a starry night.</p>
+            </div>
+            <div class="track">
+                <audio controls>
+                    <source src="6.aac" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <h2>Music Track 2</h2>
+                <p>This is an exhilarating instrumental composition designed specifically for a video game soundtrack. This dynamic piece of music takes players on a thrilling adventure through an enchanted world, immersing them in the game's storyline and enhancing the overall gaming experience.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<section id="contact">
+    <h1 style="font-size: 3rem;">Contact</h1>
+    <div class="container" >
+        <form action="contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+    <footer style="height: 20vh; ">
+        <p style="padding: 4rem;">&copy; 2023 Shivam Barthwal - Musician & Web Developer</p>
+    </footer>
+</body>
+</html>
